@@ -3,6 +3,7 @@ import { Carousel } from "react-bootstrap";
 import ReactImg from "../../img/React.png";
 import AngularImg from "../../img/Angular.png";
 import VueImg from "../../img/Vue.png";
+import "../Slider/Slider.css";
 
 const Slider = () => {
   return (
