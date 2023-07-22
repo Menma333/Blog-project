@@ -27,3 +27,7 @@ header ul.nav li {
 header ul.nav li:hover {
   opacity: 0.5;
 }
+
+.logo__icon {
+  color: gold;
+}
