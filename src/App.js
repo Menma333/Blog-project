@@ -4,6 +4,7 @@ import Slider from "./components/Slider/Slider.tsx";
 
 
 function App() {
+
   return (
     <div className="App">
       <Header />
