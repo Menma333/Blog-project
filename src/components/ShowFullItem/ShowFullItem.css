@@ -1,17 +1,26 @@
 .ShowFullItem__overlay {
   position: fixed;
-  top: 0;
+  top: -150px;
   left: 0;
-  width: 100%;
-  height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 99999;
+  overflow: auto;
+}
+
+.ShowFullItem__overlay>div {
+  width: 600px;
+  position: relative;
+  margin: 10% auto;
+  padding: 40px 30px;
+  background: black;
+  border-radius: 9px;
 }
 
 .ShowFullItem__content {
-  background-color: #fff;
+  background-color: black;
+  color: gold;
   padding: 20px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
@@ -23,4 +32,21 @@
 
 .ShowFullItem__content p {
   margin-bottom: 20px;
+}
+
+.ShowFullItem__button {
+  background-color: black;
+  color: gold;
+  border: solid;
+  padding: 20px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+.ShowFullItem__button:hover {
+  background-color: gold;
+  color: black;
 }
