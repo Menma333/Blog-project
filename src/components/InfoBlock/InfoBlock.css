@@ -1,0 +1,23 @@
+.container {
+  background-color: black;
+  text-align: center;
+  color: gold;
+  padding-top: 25px;
+}
+
+.info__button {
+  background-color: black;
+  color: gold;
+  border: solid;
+  padding: 20px 25px;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 4px;
+  margin-left: 35px;
+  margin-bottom: 20px;
+}
+
+.info__button:hover {
+  background-color: gold;
+  color: black;
+}
