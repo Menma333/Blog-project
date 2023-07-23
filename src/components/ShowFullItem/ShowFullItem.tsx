@@ -1,11 +1,11 @@
 import React from "react";
-import "../ShowFullInfo/ShowFullInfo.css";
+import "../ShowFullItem/ShowFullItem.css";
 
-const ShowFullInfo = ({ isOpen, onClose }) => {
+const ShowFullItem = ({ isOpen, onClose }) => {
   if (!isOpen) return null;
   return (
-    <div className="ShowFullInfo__overlay">
-      <div className="ShowFullInfo__content">
+    <div className="ShowFullItem__overlay">
+      <div className="ShowFullItem__content">
         <h3>React</h3>
         <p>
           React is one of the most popular and popular JavaScript libraries for
@@ -38,4 +38,4 @@ const ShowFullInfo = ({ isOpen, onClose }) => {
   );
 };
 
-export default ShowFullInfo;
+export default ShowFullItem;
