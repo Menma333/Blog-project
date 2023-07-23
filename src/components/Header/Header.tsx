@@ -1,18 +1,25 @@
 import React from "react";
 import "../Header/Header.css";
 import { FaChartBar } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const Header = () => {
   return (
     <header className="header">
       <div>
-        <span className="logo">
+        <Link to="/" className="logo">
           IT Bloggy <FaChartBar className="logo__icon" />
-        </span>
+        </Link>
         <ul className="nav">
-          <li>Blog</li>
-          <li>CREATE A TOPIC</li>
-          <li>ABOUT US</li>
+          <li>
+            <Link to="/blog">Blog</Link>
+          </li>
+          <li>
+            <Link to="/create-topic">CREATE A TOPIC</Link>
+          </li>
+          <li>
+            <Link to="/about-us">ABOUT US</Link>
+          </li>
         </ul>
       </div>
     </header>
