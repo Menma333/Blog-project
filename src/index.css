@@ -3,8 +3,8 @@
 * {
   margin: 0;
   padding: 0;
-  overflow-x: hidden;
-  overflow: hidden !important;
+  overflow-y: scroll;
+  overflow: hidden;
 }
 
 html {
@@ -18,8 +18,10 @@ body {
   font-family: 'Poppins', sans-serif !important;
   font-weight: 300;
   overflow-x: hidden !important;
+  overflow-y: scroll !important;
   height: 100%;
   position: relative;
+
 }
 
 .App {
