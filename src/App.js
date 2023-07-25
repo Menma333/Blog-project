@@ -6,6 +6,7 @@ import Blog from './pages/Blog/Blog.tsx'
 import Category from './pages/Category/Category.tsx'
 import AboutUs from './pages/About Us/AboutUs.tsx'
 import Home from './pages/Home/Home.tsx'
+import FavoriteArticle from './pages/Fovorite Article/FavoriteArticle.tsx'
 
 function App() {
 
@@ -17,6 +18,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/category" element={<Category />} />
+          <Route path="/favorite-article" element={<FavoriteArticle />} />
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
         <Footer />
