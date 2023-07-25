@@ -128,6 +128,8 @@ Thanks to its simplicity and flexibility, Vue.js has become a popular tool for b
     },
   ];
 
+  const technologyTitles = ["React", "Angular", "Vue.js"];
+
   return (
     <>
       <Slider />
@@ -151,7 +153,7 @@ Thanks to its simplicity and flexibility, Vue.js has become a popular tool for b
         //   },
         // ]}
       />
-      <ArticleBlock articles={articles} />
+      <ArticleBlock articles={articles} technologyTitles={technologyTitles} />
       <ShowFullItem
         isOpen={isShowFullItemOpen}
         onClose={handleCloseShowFullItem}

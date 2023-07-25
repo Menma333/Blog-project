@@ -42,3 +42,19 @@
   background-color: gold;
   color: black;
 }
+
+.title__articles__button {
+  background-color: black;
+  color: gold;
+  border: none;
+  border-radius: 4px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+}
+
+.title__articles__button:hover {
+  background-color: gold;
+  color: black;
+}

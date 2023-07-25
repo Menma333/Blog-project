@@ -1,0 +1,21 @@
+.about__h1 {
+  font-size: 36px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.about__h3 {
+  font-size: 20px;
+  font-style: italic;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+p {
+  margin-bottom: 15px;
+}
+
+.icon__abouUS {
+  font-size: 50px;
+}
