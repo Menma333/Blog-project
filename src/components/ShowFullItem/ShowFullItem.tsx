@@ -1,6 +1,5 @@
 import React from "react";
 import "../ShowFullItem/ShowFullItem.css";
-import { FaAngular, FaVuejs, FaReact } from "react-icons/fa";
 
 const ShowFullItem = ({ isOpen, onClose, title, info, icon }) => {
   if (!isOpen) return null;

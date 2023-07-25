@@ -10,7 +10,7 @@ const ArticleBlock = ({ articles }) => {
           <div key={article.id} className="article">
             <h2 className="article-title">{article.title}</h2>
             <p className="article-content">{article.content}</p>
-            <button className="read-more-button">
+            <button className="like__button">
               <FaHeart />
             </button>
           </div>

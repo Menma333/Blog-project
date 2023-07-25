@@ -10,11 +10,15 @@ header .logo {
   font-weight: 600;
   font-size: 20px;
   Float: left;
+  color: gold;
+  text-decoration: none;
 }
 
 header ul.nav {
   float: right;
   list-style: none;
+  color: gold !important;
+  text-decoration: none !important;
 }
 
 header ul.nav li {
@@ -22,6 +26,8 @@ header ul.nav li {
   margin-left: 25px;
   cursor: pointer;
   transition: opacity 500ms ease;
+  color: gold !important;
+  text-decoration: none !important;
 }
 
 header ul.nav li:hover {

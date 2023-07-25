@@ -15,10 +15,10 @@ const Header = () => {
             <Link to="/blog">Blog</Link>
           </li>
           <li>
-            <Link to="/create-topic">CREATE A TOPIC</Link>
+            <Link to="/category">Category</Link>
           </li>
           <li>
-            <Link to="/about-us">ABOUT US</Link>
+            <Link to="/about-us">About Us</Link>
           </li>
         </ul>
       </div>
