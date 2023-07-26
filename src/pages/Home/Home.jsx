@@ -1,9 +1,9 @@
 import React, { Component, useState } from "react";
 import "./Home.css";
-import Slider from "../../components/Slider/Slider.tsx";
-import InfoBlock from "../../components/InfoBlock/InfoBlock.tsx";
-import ArticleBlock from "../../components/ArticleBlock/ArticleBlock.tsx";
-import ShowFullItem from "../../components/ShowFullItem/ShowFullItem.tsx";
+import Slider from "../../components/Slider/Slider";
+import InfoBlock from "../../components/InfoBlock/InfoBlock";
+import ArticleBlock from "../../components/ArticleBlock/ArticleBlock";
+import ShowFullItem from "../../components/ShowFullItem/ShowFullItem";
 
 const Home = () => {
   const [isShowFullItemOpen, setShowFullItemOpen] = useState(false);
