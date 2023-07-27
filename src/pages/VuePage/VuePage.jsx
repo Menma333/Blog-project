@@ -1,7 +1,7 @@
 import React from "react";
 import CategoryPage from "../../components/CategoryPage/CategoryPage";
 
-const VuePage = ({ category, articles }) => {
+const VuePage = ({ articles }) => {
   return <CategoryPage category="Vue.js" articles={articles} />;
 };
 

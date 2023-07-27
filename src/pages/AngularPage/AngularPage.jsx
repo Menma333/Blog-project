@@ -1,7 +1,7 @@
 import React from "react";
 import CategoryPage from "../../components/CategoryPage/CategoryPage";
 
-const AngularPage = ({ category, articles }) => {
+const AngularPage = ({ articles }) => {
   return <CategoryPage category="Angular" articles={articles} />;
 };
 
