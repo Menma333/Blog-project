@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import { BrowserRouter as Router, Route, Routes, Link } from "react-router-dom";
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -76,17 +76,19 @@ function App() {
     },
   ];
 
+  const [favorites, setFavorites] = useState([])
+
   return (
     <Router>
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<Home articles={articles} />} />
+          <Route path="/" element={<Home articles={articles} onLikeClicked={(articles) => setFavorites(articles)} />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/category">
             <Route path=":category" element={<Category articles={articles} />} />
           </Route>
-          <Route path="/favorite-article" element={<FavoriteArticle />} />
+          <Route path="/favorite-article" element={<FavoriteArticle favorites={favorites} />} />
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
         <Footer />
