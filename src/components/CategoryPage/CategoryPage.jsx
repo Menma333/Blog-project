@@ -8,7 +8,7 @@ const CategoryPage = ({ category, articles }) => {
 
   return (
     <div>
-      <h1>{category} Articles</h1>
+      <h1>{category.charAt(0).toUpperCase() + category.slice(1)} Articles</h1>
       {filteredArticles.map((article) => (
         <ArticleItem key={article.id} article={article} />
       ))}

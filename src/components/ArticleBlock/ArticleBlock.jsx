@@ -1,13 +1,16 @@
 import React from "react";
 import "../ArticleBlock/ArticleBlock.css";
 import { FaHeart } from "react-icons/fa";
+import { Link } from "react-router-dom";
 
 const ArticleBlock = ({ articles, technologyTitles }) => {
   return (
     <div className="container">
       {technologyTitles.map((title) => (
         <button className="title__articles__button" key={title}>
-          <h2>{title}</h2>
+          <Link to={"category/" + title.toLowerCase()}>
+            <h2>{title}</h2>
+          </Link>
           <div className="article-block-container">
             {articles
               .filter((article) =>
