@@ -5,7 +5,7 @@ import InfoBlock from "../../components/InfoBlock/InfoBlock";
 import ArticleBlock from "../../components/ArticleBlock/ArticleBlock";
 import ShowFullItem from "../../components/ShowFullItem/ShowFullItem";
 
-const Home = ({ articles }) => {
+const Home = ({ articles, handLikeClicked }) => {
   const [isShowFullItemOpen, setShowFullItemOpen] = useState(false);
   const [itemInfo, setItemInfo] = useState("");
   const [itemTitle, setItemTitle] = useState("");

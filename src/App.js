@@ -76,14 +76,24 @@ function App() {
     },
   ];
 
-  const [favorites, setFavorites] = useState([])
+  const [favorites, setFavorites] = useState([]);
+
+  const handLikeClicked = (articles) => {
+    const index = articles.findIndex(el => el.id === articles.id);
+
+    if (index >= 0) {
+      setFavorites((prev) => prev.toSpliced(index, 1));
+    }
+
+    setFavorites((prev) => [articles, ...prev]);
+  }
 
   return (
     <Router>
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<Home articles={articles} onLikeClicked={(articles) => setFavorites(articles)} />} />
+          <Route path="/" element={<Home articles={articles} handLikeClicked={handLikeClicked} />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/category">
             <Route path=":category" element={<Category articles={articles} />} />
