@@ -2,16 +2,8 @@ import React, { useState } from "react";
 import { BsFillHeartFill } from "react-icons/bs";
 import "./ArticleItem.css";
 
-const ArticleItem = ({ article }) => {
+const ArticleItem = ({ article, handleLikeClicked }) => {
   const [isLiked, setIsLiked] = useState(false);
-
-  const handleLikeClicked = () => {
-    setIsLiked(!isLiked);
-  };
-
-  if (!article) {
-    return null;
-  }
 
   return (
     <div className="article">
