@@ -6,7 +6,7 @@ import ArticleBlock from "../../components/ArticleBlock/ArticleBlock";
 import ShowFullItem from "../../components/ShowFullItem/ShowFullItem";
 import ArticleItem from "../../components/ArticleItem/ArticleItem";
 
-const Home = ({ articles, handLikeClicked }) => {
+const Home = ({ articles, handleLikeClicked }) => {
   const [isShowFullItemOpen, setShowFullItemOpen] = useState(false);
   const [itemInfo, setItemInfo] = useState("");
   const [itemTitle, setItemTitle] = useState("");
@@ -97,11 +97,10 @@ Thanks to its simplicity and flexibility, Vue.js has become a popular tool for b
         //   },
         // ]}
       />
-      <ArticleItem articles={articles} handLikeClicked={handLikeClicked} />
       <ArticleBlock
         articles={articles}
         technologyTitles={technologyTitles}
-        handLikeClicked={handLikeClicked}
+        handleLikeClicked={handleLikeClicked}
       />
       <ShowFullItem
         isOpen={isShowFullItemOpen}

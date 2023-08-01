@@ -78,7 +78,7 @@ function App() {
 
   const [favorites, setFavorites] = useState([]);
 
-  const handLikeClicked = (article) => {
+  const handleLikeClicked = (article) => {
     const isLiked = favorites.some((favArticle) => favArticle.id === article.id);
 
     if (isLiked) {
@@ -93,7 +93,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<Home articles={articles} handLikeClicked={handLikeClicked} />} />
+          <Route path="/" element={<Home articles={articles} handleLikeClicked={handleLikeClicked} />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/category">
             <Route path=":category" element={<Category articles={articles} />} />
