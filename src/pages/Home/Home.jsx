@@ -78,23 +78,23 @@ Thanks to its simplicity and flexibility, Vue.js has become a popular tool for b
       <Slider />
       <InfoBlock
         onOpenShowFullItem={handleOpenShowFullItem}
-        // items={[
-        //   {
-        //     title: "React",
-        //     info: ReactInfo,
-        //     icon: <FaReact />,
-        //   },
-        //   {
-        //     title: "Angular",
-        //     info: AngularInfo,
-        //     icon: <FaAngular />,
-        //   },
-        //   {
-        //     title: "Vue.js",
-        //     info: VueInfo,
-        //     icon: <FaVuejs />,
-        //   },
-        // ]}
+        items={[
+          {
+            title: "React",
+            info: ReactInfo,
+            icon: <FaReact />,
+          },
+          {
+            title: "Angular",
+            info: AngularInfo,
+            icon: <FaAngular />,
+          },
+          {
+            title: "Vue.js",
+            info: VueInfo,
+            icon: <FaVuejs />,
+          },
+        ]}
       />
       <ArticleBlock
         articles={articles}

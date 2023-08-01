@@ -4,7 +4,7 @@ import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
 import Blog from "./pages/Blog/Blog";
 import Category from "./pages/Category/Category";
-import AboutUs from "./pages/About Us/AboutUs";
+import AboutUs from "./pages/AboutUs/AboutUs";
 import Home from "./pages/Home/Home";
 import FavoriteArticle from "./pages/FavoriteArticle/FavoriteArticle";
 
