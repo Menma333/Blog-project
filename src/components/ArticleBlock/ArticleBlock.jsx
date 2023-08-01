@@ -3,7 +3,7 @@ import "../ArticleBlock/ArticleBlock.css";
 import { Link } from "react-router-dom";
 import ArticleItem from "../ArticleItem/ArticleItem";
 
-const ArticleBlock = ({ articles, technologyTitles }) => {
+const ArticleBlock = ({ articles, technologyTitles, handleLikeClicked }) => {
   return (
     <div className="container">
       {technologyTitles.map((title) => (
@@ -18,7 +18,13 @@ const ArticleBlock = ({ articles, technologyTitles }) => {
               )
               .map(
                 (article) =>
-                  article && <ArticleItem key={articles.id} article={article} />
+                  article && (
+                    <ArticleItem
+                      key={articles.id}
+                      article={article}
+                      handleLikeClicked={handleLikeClicked}
+                    />
+                  )
               )}
           </div>
         </button>
