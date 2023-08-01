@@ -18,7 +18,7 @@ const ArticleBlock = ({ articles, technologyTitles }) => {
               )
               .map(
                 (article) =>
-                  article && <ArticleItem key={article.id} article={article} />
+                  article && <ArticleItem key={articles.id} article={article} />
               )}
           </div>
         </button>

@@ -9,6 +9,10 @@ const ArticleItem = ({ article }) => {
     setIsLiked(!isLiked);
   };
 
+  if (!article) {
+    return null;
+  }
+
   return (
     <div className="article">
       <h2 className="article-title">{article.title}</h2>

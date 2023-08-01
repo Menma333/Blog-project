@@ -98,7 +98,11 @@ Thanks to its simplicity and flexibility, Vue.js has become a popular tool for b
         // ]}
       />
       <ArticleItem articles={articles} handLikeClicked={handLikeClicked} />
-      <ArticleBlock articles={articles} technologyTitles={technologyTitles} />
+      <ArticleBlock
+        articles={articles}
+        technologyTitles={technologyTitles}
+        handLikeClicked={handLikeClicked}
+      />
       <ShowFullItem
         isOpen={isShowFullItemOpen}
         onClose={handleCloseShowFullItem}
