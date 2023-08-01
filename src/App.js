@@ -98,7 +98,7 @@ function App() {
           <Route path="/category">
             <Route path=":category" element={<Category articles={articles} />} />
           </Route>
-          <Route path="/favorite-article" element={<FavoriteArticle favorites={favorites} />} />
+          <Route path="/favorite-article" element={<FavoriteArticle favorites={favorites} handleLikeClicked={handleLikeClicked} />} />
           <Route path="/about-us" element={<AboutUs />} />
         </Routes>
         <Footer />

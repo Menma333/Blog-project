@@ -6,6 +6,7 @@ const ArticleItem = ({ article, handleLikeClicked }) => {
   const [isLiked, setIsLiked] = useState(false);
 
   const handleLikeButtonClicked = () => {
+    console.log(handleLikeClicked);
     handleLikeClicked(article);
     setIsLiked(!isLiked);
   };
