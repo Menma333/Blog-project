@@ -4,6 +4,7 @@ import Slider from "../../components/Slider/Slider";
 import InfoBlock from "../../components/InfoBlock/InfoBlock";
 import ArticleBlock from "../../components/ArticleBlock/ArticleBlock";
 import ShowFullItem from "../../components/ShowFullItem/ShowFullItem";
+import ArticleItem from "../../components/ArticleItem/ArticleItem";
 
 const Home = ({ articles, handLikeClicked }) => {
   const [isShowFullItemOpen, setShowFullItemOpen] = useState(false);
@@ -96,6 +97,7 @@ Thanks to its simplicity and flexibility, Vue.js has become a popular tool for b
         //   },
         // ]}
       />
+      <ArticleItem articles={articles} handLikeClicked={handLikeClicked} />
       <ArticleBlock articles={articles} technologyTitles={technologyTitles} />
       <ShowFullItem
         isOpen={isShowFullItemOpen}

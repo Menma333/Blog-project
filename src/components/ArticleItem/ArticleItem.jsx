@@ -5,7 +5,7 @@ import "./ArticleItem.css";
 const ArticleItem = ({ article }) => {
   const [isLiked, setIsLiked] = useState(false);
 
-  const handleLikeClick = () => {
+  const handleLikeClicked = () => {
     setIsLiked(!isLiked);
   };
 
@@ -13,7 +13,7 @@ const ArticleItem = ({ article }) => {
     <div className="article">
       <h2 className="article-title">{article.title}</h2>
       <p className="article-content">{article.content}</p>
-      <button className="like__button" onClick={handleLikeClick}>
+      <button className="like__button" onClick={handleLikeClicked}>
         {isLiked ? <BsFillHeartFill color="red" /> : <BsFillHeartFill />}
       </button>
     </div>

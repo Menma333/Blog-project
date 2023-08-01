@@ -78,15 +78,15 @@ function App() {
 
   const [favorites, setFavorites] = useState([]);
 
-  const handLikeClicked = (articles) => {
-    const index = articles.findIndex(el => el.id === articles.id);
+  const handLikeClicked = (article) => {
+    const isLiked = favorites.some((favArticle) => favArticle.id === article.id);
 
-    if (index >= 0) {
-      setFavorites((prev) => prev.toSpliced(index, 1));
+    if (isLiked) {
+      setFavorites((prev) => prev.filter((favArticle) => favArticle.id !== article.id));
+    } else {
+      setFavorites((prev) => [...prev, article]);
     }
-
-    setFavorites((prev) => [articles, ...prev]);
-  }
+  };
 
   return (
     <Router>

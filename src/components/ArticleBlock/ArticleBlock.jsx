@@ -16,9 +16,10 @@ const ArticleBlock = ({ articles, technologyTitles }) => {
               .filter((article) =>
                 article.title.toLowerCase().includes(title.toLowerCase())
               )
-              .map((article) => (
-                <ArticleItem article={article} />
-              ))}
+              .map(
+                (article) =>
+                  article && <ArticleItem key={article.id} article={article} />
+              )}
           </div>
         </button>
       ))}
