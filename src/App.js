@@ -93,7 +93,7 @@ function App() {
       <div className="App">
         <Header />
         <Routes>
-          <Route path="/" element={<Home articles={articles} handleLikeClicked={handleLikeClicked} />} />
+          <Route path="/" element={<Home articles={articles} handleLikeClicked={handleLikeClicked} favorites={favorites} />} />
           <Route path="/blog" element={<Blog />} />
           <Route path="/category">
             <Route path=":category" element={<Category articles={articles} />} />

@@ -6,7 +6,7 @@ import ArticleBlock from "../../components/ArticleBlock/ArticleBlock";
 import ShowFullItem from "../../components/ShowFullItem/ShowFullItem";
 import { FaReact, FaAngular, FaVuejs } from "react-icons/fa";
 
-const Home = ({ articles }) => {
+const Home = ({ articles, favorites, handleLikeClicked }) => {
   const [isShowFullItemOpen, setShowFullItemOpen] = useState(false);
   const [itemInfo, setItemInfo] = useState("");
   const [itemTitle, setItemTitle] = useState("");
