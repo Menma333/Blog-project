@@ -1,14 +1,13 @@
-import React, { useState } from "react";
+import React from "react";
 import { BsFillHeartFill } from "react-icons/bs";
 import "./ArticleItem.css";
 
-const ArticleItem = ({ article, handleLikeClicked }) => {
-  const [isLiked, setIsLiked] = useState(false);
+const ArticleItem = ({ article, isLiked, handleLikeClicked }) => {
+  const [liked, setLiked] = isLiked(false);
 
   const handleLikeButtonClicked = () => {
-    console.log(handleLikeClicked);
     handleLikeClicked(article);
-    setIsLiked(!isLiked);
+    setLiked(!liked);
   };
 
   return (
@@ -16,7 +15,7 @@ const ArticleItem = ({ article, handleLikeClicked }) => {
       <h2 className="article-title">{article.title}</h2>
       <p className="article-content">{article.content}</p>
       <button className="like__button" onClick={handleLikeButtonClicked}>
-        {isLiked ? <BsFillHeartFill color="red" /> : <BsFillHeartFill />}
+        {liked ? <BsFillHeartFill color="red" /> : <BsFillHeartFill />}
       </button>
     </div>
   );

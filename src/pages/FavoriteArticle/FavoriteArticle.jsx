@@ -9,6 +9,7 @@ const FavoriteArticle = ({ favorites, handleLikeClicked }) => {
         <ArticleItem
           key={article.id}
           article={article}
+          isLiked={true}
           handleLikeClicked={handleLikeClicked}
         />
       ))}

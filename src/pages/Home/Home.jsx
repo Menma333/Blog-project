@@ -6,7 +6,7 @@ import ArticleBlock from "../../components/ArticleBlock/ArticleBlock";
 import ShowFullItem from "../../components/ShowFullItem/ShowFullItem";
 import { FaReact, FaAngular, FaVuejs } from "react-icons/fa";
 
-const Home = ({ articles, handleLikeClicked }) => {
+const Home = ({ articles }) => {
   const [isShowFullItemOpen, setShowFullItemOpen] = useState(false);
   const [itemInfo, setItemInfo] = useState("");
   const [itemTitle, setItemTitle] = useState("");
@@ -24,6 +24,10 @@ const Home = ({ articles, handleLikeClicked }) => {
   };
 
   const technologyTitles = ["React", "Angular", "Vue"];
+
+  const isLiked = (articleId) => {
+    return favorites.some((favArticle) => favArticle.id === articleId);
+  };
 
   const items = [
     {
@@ -94,6 +98,7 @@ const Home = ({ articles, handleLikeClicked }) => {
         articles={articles}
         technologyTitles={technologyTitles}
         handleLikeClicked={handleLikeClicked}
+        isLiked={isLiked}
       />
       <ShowFullItem
         isOpen={isShowFullItemOpen}

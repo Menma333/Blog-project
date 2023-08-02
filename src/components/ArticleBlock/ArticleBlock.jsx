@@ -3,7 +3,12 @@ import "../ArticleBlock/ArticleBlock.css";
 import { Link } from "react-router-dom";
 import ArticleItem from "../ArticleItem/ArticleItem";
 
-const ArticleBlock = ({ articles, technologyTitles, handleLikeClicked }) => {
+const ArticleBlock = ({
+  articles,
+  technologyTitles,
+  handleLikeClicked,
+  isLiked,
+}) => {
   return (
     <div className="container">
       {technologyTitles.map((title) => (
@@ -23,6 +28,7 @@ const ArticleBlock = ({ articles, technologyTitles, handleLikeClicked }) => {
                       key={articles.id}
                       article={article}
                       handleLikeClicked={handleLikeClicked}
+                      isLiked={isLiked(article.id)}
                     />
                   )
               )}
