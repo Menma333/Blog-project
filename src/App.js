@@ -6,7 +6,7 @@ import Blog from "./pages/Blog/Blog";
 import Category from "./pages/Category/Category";
 import AboutUs from "./pages/AboutUs/AboutUs";
 import Home from "./pages/Home/Home";
-import FavoriteArticle from "./pages/FavoriteArticle/FavoriteArticle";
+import FavoriteArticle from "./pages/FavoriteArticles/FavoriteArticles";
 
 function App() {
 

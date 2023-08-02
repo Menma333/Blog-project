@@ -7,7 +7,7 @@
 }
 
 .article-block-container .article {
-  width: 33%;
+  width: calc(33% - 20px);
 }
 
 .article-title {
