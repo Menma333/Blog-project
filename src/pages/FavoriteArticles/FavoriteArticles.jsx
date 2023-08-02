@@ -1,7 +1,7 @@
 import React from "react";
 import ArticleItem from "../../components/ArticleItem/ArticleItem";
 
-const FavoriteArticle = ({ favorites, handleLikeClicked }) => {
+const FavoriteArticles = ({ favorites, handleLikeClicked }) => {
   return (
     <div className="container">
       <h1>Favorite Articles</h1>
@@ -17,4 +17,4 @@ const FavoriteArticle = ({ favorites, handleLikeClicked }) => {
   );
 };
 
-export default FavoriteArticle;
+export default FavoriteArticles;
